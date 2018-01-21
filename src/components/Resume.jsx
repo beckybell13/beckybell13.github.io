@@ -71,14 +71,14 @@ class Experience extends React.Component {
 			<div style={{padding: '1%'}}>
 				<Header textColor={'black'} active={'portfolio'}/>
 				<div style={{padding: 48}}>
-					<Grid container style={styles.portfolioItem} spacing={12} align='center' justify='center'>
+					<Grid container style={styles.portfolioItem} spacing={0} alignItems='center' justify='center'>
 						<Grid item xs={6}>
-							<Grid container justify='center' align='center'>
+							<Grid container justify='center' alignItems='center'>
 								<img src='./src/content/accord-demo-2.gif' style={styles.thumbnail}></img>
 							</Grid>
 						</Grid>
 						<Grid item xs={6} style={styles.textContainer}>
-							<Grid container justify='flex-start' align='center'>
+							<Grid container justify='flex-start' alignItems='center'>
 								<p style={styles.title}>Accord</p>
 								<div style={styles.descriptionText}>
 									<p style={styles.subtitle}>
@@ -116,9 +116,9 @@ class Experience extends React.Component {
 					</Grid>
 				 </div>
 				 <div style={{padding: 48}}>
-					 <Grid container style={styles.portfolioItem} spacing={12} align='center' justify='center'>
+					 <Grid container style={styles.portfolioItem} spacing={0} alignItems='center' justify='center'>
 	 					<Grid item xs={6} style={styles.textContainer}>
-							<Grid container justify='flex-start' align='center'>
+							<Grid container justify='flex-start' alignItems='center'>
 								<p style={styles.title}>MIT Confessions Bot</p>
 		 						<div>
 		 							<p style={styles.subtitle}>
@@ -153,7 +153,7 @@ class Experience extends React.Component {
 							</Grid>
 	 					</Grid>
 	 					<Grid item xs={6}>
-							<Grid container justify='center' align='center'>
+							<Grid container justify='center' alignItems='center'>
 								<img src='./src/img/confessions-wide.png' style={styles.thumbnail}></img>
 							</Grid>
 	 					</Grid>
@@ -161,14 +161,14 @@ class Experience extends React.Component {
 				 </div>
 
 				 <div style={{padding: 48}}>
-					 <Grid container style={styles.portfolioItem} spacing={24} justify='flex-start' align='center'>
+					 <Grid container style={styles.portfolioItem} spacing={0} justify='flex-start' alignItems='center'>
 	 					<Grid item xs={6}>
-							<Grid container justify='center' align='center'>
+							<Grid container justify='center' alignItems='center'>
 								<iframe style={styles.thumbnail} width="560" height="315" src="https://www.youtube.com/embed/Hl0idKQHj-g" frameBorder="0" allowFullScreen></iframe>
 							</Grid>
 	 					</Grid>
 	 					<Grid item xs={6} style={styles.textContainer}>
-							<Grid container justify='flex-start' align='center'>
+							<Grid container justify='flex-start' alignItems='center'>
 								<p style={styles.title}>MusicBuddy</p>
 								<div>
 									<p style={styles.subtitle}>
@@ -209,9 +209,9 @@ class Experience extends React.Component {
 				 </div>
 
 				 <div style={{padding: 48}}>
-					 <Grid container gutter={0} style={styles.portfolioItem} spacing={24} justify='center' align='center'>
+					 <Grid spacing={0} container style={styles.portfolioItem} justify='center' alignItems='center'>
 	 					<Grid item xs={6} style={styles.textContainer}>
-							<Grid container justify='flex-start' align='center'>
+							<Grid container justify='flex-start' alignItems='center'>
 								<p style={styles.title}>Evaluating Technology in Context: Mobile Apps for Waste Pickers</p>
 	 							<p style={styles.subtitle}>
 	 								Report and evaluation of existing mobile apps for waste pickers
@@ -239,7 +239,7 @@ class Experience extends React.Component {
 							</Grid>
 	 					</Grid>
 	 					<Grid item item xs={6}>
-							<Grid container justify='center' align='center'>
+							<Grid container justify='center' alignItems='center'>
 								<img src='./src/img/d-lab-wide.png' style={styles.thumbnail}></img>
 							</Grid>
 	 					</Grid>

@@ -74,7 +74,7 @@ class Header extends React.Component {
 		const styles = this.getStyles(textColor);
 		return (
 			<div>
-				<Grid container style={styles.headerBar} justify='flex-start' align='center'>
+				<Grid container style={styles.headerBar} justify='flex-start' alignItems='center' spacing={0}>
 					<Grid item sm={5} md={7} lg={8}>
 						<div style={styles.col1}>
 							<div style={styles.buttons} key='home' id='home' className='menu'>
@@ -89,7 +89,7 @@ class Header extends React.Component {
 						</div>
 					</Grid>
 					<Grid item md={4}>
-						<Grid container justify='center' align='center'>
+						<Grid container justify='center' alignItems='center'>
 							<Grid item md={2} style={styles.test}>
 								<a href='mailto:bellr@mit.edu' style={styles.col2}>
 									<img src={`src/img/contact/email-${textColor}-64.png`} key='email' style={styles.logo}></img>

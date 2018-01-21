@@ -7,9 +7,9 @@ class Footer extends React.Component {
 		return {
 			headerBar: {
 				backgroundColor: '#041D2C',
-				height: '20vh',
-				borderBottom: '1px solid black',
+				height: '100%',
 				textAlign: 'center',
+				width: '100%',
 			},
 			homeButtonText: {
 				textDecoration: 'none',
@@ -25,11 +25,11 @@ class Footer extends React.Component {
 	render() {
 		const styles = this.getStyles();
 		return (
-			<footer style={styles.headerBar}>
+			<div style={styles.headerBar}>
 				<div style={styles.homeButtonText}>
 					&copy; Becky Bell 2018
 				</div>
-			</footer>
+			</div>
 		);
 	}
 }

@@ -8,9 +8,13 @@ import Header from './Header.jsx';
 class Experience extends React.Component {
 	getStyles() {
 		return {
+			bannerContainer: {
+
+			},
 			banner: {
-				background: 'url(./src/img/news.jpg) no-repeat center center/cover fixed',
+				background: 'url(./src/img/news.jpg) no-repeat center center/cover',
 				height: '35vh',
+				width: '90%',
 				textAlign: 'center',
 				color: 'white',
 				fontSize: '40px',
@@ -21,7 +25,7 @@ class Experience extends React.Component {
 				backgroundColor: 'rgba(0,0,0,0.6)',
 			},
 			intro: {
-				height: '40vh',
+				height: '35vh',
 			},
 			descriptionTitle: {
 				display: 'flex',
@@ -76,96 +80,72 @@ class Experience extends React.Component {
 		return (
 			<div style={{padding: '1%'}}>
 				<Header textColor={'black'} active={'thesis'}/>
-				<Grid container style={styles.banner}>
-					<Grid item xs={12}>
-						<Grid container justify='center' align='center' style={{height:'35vh'}}>
-							<div style={styles.bannerText}>
-								<p> increasing accessibility of machine learning methods <br></br> for media researchers </p>
-							</div>
+				<Grid container justify='center' alignItems='center' spacing={0} style={styles.bannerContainer}>
+					<Grid container style={styles.banner} spacing={0} alignItems='center' justify='center'>
+						<Grid item xs={12}>
+							<Grid container spacing={0} justify='center' alignItems='center' style={{height:'35vh'}}>
+								<div style={styles.bannerText}>
+									<p> increasing accessibility of machine learning methods <br></br> for media researchers </p>
+								</div>
+							</Grid>
 						</Grid>
 					</Grid>
 				</Grid>
-					<Grid container gutter={0} style={styles.intro}>
-						<Grid item xs={6} style={styles.descriptionTitle}>
-							<img style={styles.icon} src='./src/img/group-48.png'></img>
-							<p> The news steers the conversations we have as a society </p>
-						</Grid>
-						<Grid item xs={6} style={styles.introTextRight}>
-							<p> {"How does the news shape our view of issues and events?\
-									Which topics of the day are published and shared the most?\
-									Which events get coverage and which events are ignored?\
-									These are the kinds of questions that media researchers are interested\
-									in exploring. From "}
-									<a className='link' href='https://mediacloud.org/news/2016/6/9/understanding-teen-pregnancy-frames-using-media-cloud-tools'>teen pregnancy</a>
-									{" to "}<a className='link' href='https://mediacloud.org/election-2016'>the election</a>{",\
-									the attention and framing of issues can affect how we talk about and understand events in our world."}
-							</p>
-						</Grid>
+				<Grid container style={styles.intro} spacing={0}>
+					<Grid item xs={6} style={styles.descriptionTitle}>
+						<img style={styles.icon} src='./src/img/group-48.png'></img>
+						<p> The news steers the conversations we have as a society </p>
 					</Grid>
-					<Grid container gutter={0} style={styles.intro}>
-						<Grid item xs={6} style={styles.descriptionTitle}>
-							<img style={styles.icon} src='./src/img/computer-48.png'></img>
-							<p> Media Cloud helps researchers understand the coverage and framing of topics in the news </p>
-						</Grid>
-						<Grid item xs={6} style={styles.introTextRight}>
-							<p> <a className='link' href='https://mediacloud.org'>Media Cloud</a>{" is an online research platform where users can use a\
-								  suite of tools to analyze news data. It collects and stores data on news stories from top sources and\
-								  provides visualization and analysis tools to explore and understand the coverage and content of different topics.\
-									It is a on-going project run out of the "}<a className='link' href='https://civic.mit.edu/'>Center for Civic Media</a>{" at the "}
-									<a className='link' href='https://www.media.mit.edu/'>MIT Media Lab</a>{"."}
-							</p>
-						</Grid>
+					<Grid item xs={6} style={styles.introTextRight}>
+						<p> {"How does the news shape our view of issues and events?\
+								Which topics of the day are published and shared the most?\
+								Which events get coverage and which events are ignored?\
+								These are the kinds of questions that media researchers are interested\
+								in exploring. From "}
+								<a className='link' href='https://mediacloud.org/news/2016/6/9/understanding-teen-pregnancy-frames-using-media-cloud-tools'>teen pregnancy</a>
+								{" to "}<a className='link' href='https://mediacloud.org/election-2016'>the election</a>{",\
+								the attention and framing of issues can affect how we talk about and understand events in our world."}
+						</p>
 					</Grid>
-					<Grid container gutter={0} style={styles.intro}>
-						<Grid item xs={6} style={styles.descriptionTitle}>
-							<img style={styles.icon} src='./src/img/data-48.png'></img>
-							<p>
-								Machine learning and visualization can help researchers
-								make sense of the extensive amount of online news data
-							</p>
-						</Grid>
-						<Grid item xs={6} style={styles.introTextRight}>
-							<p>
-								My thesis explores which machine learning methods
-								are best suited for the detection of frames in news topics as well as
-								how we can make these complex techniques more
-								accessible to a non-technical user base.
-								I am currently researching, designing, and implementing new features for
-								Media Cloud, including user-supervised automated news story classification
-								as well as visualization tools for word embeddings.
-							</p>
-						</Grid>
+				</Grid>
+				<Grid container style={styles.intro} spacing={0}>
+					<Grid item xs={6} style={styles.descriptionTitle}>
+						<img style={styles.icon} src='./src/img/computer-48.png'></img>
+						<p> Media Cloud helps researchers understand the coverage and framing of topics in the news </p>
 					</Grid>
+					<Grid item xs={6} style={styles.introTextRight}>
+						<p> <a className='link' href='https://mediacloud.org'>Media Cloud</a>{" is an online research platform where users can use a\
+								suite of tools to analyze news data. It collects and stores data on news stories from top sources and\
+								provides visualization and analysis tools to explore and understand the coverage and content of different topics.\
+								It is a on-going project run out of the "}<a className='link' href='https://civic.mit.edu/'>Center for Civic Media</a>{" at the "}
+								<a className='link' href='https://www.media.mit.edu/'>MIT Media Lab</a>{"."}
+						</p>
+					</Grid>
+				</Grid>
+				<Grid container style={styles.intro} spacing={0} >
+					<Grid item xs={6} style={styles.descriptionTitle}>
+						<img style={styles.icon} src='./src/img/data-48.png'></img>
+						<p>
+							Machine learning and visualization can help researchers
+							make sense of the extensive amount of online news data
+						</p>
+					</Grid>
+					<Grid item xs={6} style={styles.introTextRight}>
+						<p>
+							My thesis explores which machine learning methods
+							are best suited for the detection of frames in news topics as well as
+							how we can make these complex techniques more
+							accessible to a non-technical user base.
+							I am currently researching, designing, and implementing new features for
+							Media Cloud, including automated news story classification
+							and visualization tools for word embeddings.
+						</p>
+					</Grid>
+				</Grid>
+
 		</div>
 		);
 	}
 }
 
 export default Radium(Experience);
-
-
-/*
-<Grid container gutter={0} style={styles.detailContainer}>
-	<Grid item xs={6} style={styles.descriptionTitle}>
-		<img style={styles.pic} src='./src/img/media-lab.jpg'>
-		</img>
-	</Grid>
-	<Grid item xs={6} style={styles.introTextRight}>
-		<div>
-			<p>
-				I'm currently working on my MEng thesis with the Center for Civic Media
-				at the MIT Media Lab, researching, designing, and implementing new features for
-				Media Cloud, including user-supervised automated news story classification
-				and visualization tools for word embeddings.
-			</p>
-			<div style={styles.buttonContainer}>
-				<Button style={styles.button2}>
-					<a className='button' href='https://www.eecs.mit.edu/academics-admissions/undergraduate-programs/6-p-meng-program' target='_blank'>
-						MIT M-Eng Program
-					</a>
-				</Button>
-			</div>
-		</div>
-	</Grid>
-</Grid>
-*/

@@ -27,7 +27,6 @@
     "react-slick": "^0.15.4",
     "react-tap-event-plugin": "^2.0.1",
     "react-transition-group": "^2.2.1",
-    "slick-carousel": "^1.8.1",
     "webpack": "^3.4.1",
     "webpack-dev-server": "^2.6.1"
   },

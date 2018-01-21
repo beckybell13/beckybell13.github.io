@@ -44,11 +44,11 @@ class Intro extends React.Component {
 		return (
 			<div style={styles.img}>
 				<Header textColor={'white'} active={'home'}/>
-				<Grid container justify='center' align='center' style={styles.banner}>
+				<Grid container justify='center' alignItems='center' style={styles.banner} spacing={0}>
 					<Grid item xs={7}>
 					</Grid>
 					<Grid item xs={4}>
-						<Grid container justify='flex-start' align='center'>
+						<Grid container justify='flex-start' alignItems='center'>
 							<div>
 								<p style={styles.heading}>Hi, I'm Becky.</p>
 								<div style={styles.details}>

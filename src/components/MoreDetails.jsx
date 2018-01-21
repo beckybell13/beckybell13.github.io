@@ -60,8 +60,8 @@ class MoreDetails extends React.Component {
 	render() {
 		const styles = this.getStyles();
 		return (
-			<div id='more-details'>
-				<Grid container gutter={0} style={styles.img}>
+			<div style={{padding: '1%'}} id='more-details'>
+				<Grid container style={styles.img} spacing={0}>
 					<Grid item xs={4} sm={4} md={4} lg={4} style={styles.headshotCol}>
 						<img src='src/img/index-background-sq.jpg' style={styles.headshot}></img>
 					</Grid>

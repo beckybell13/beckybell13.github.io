@@ -13,6 +13,7 @@ class Timeline2 extends React.Component {
 				marginTop: '5%',
 				backgroundColor: '#86a1a5',
 				height: '250vh',
+				padding: '1%',
 			},
 			grid: {
 				//height: '100vh',
@@ -66,7 +67,7 @@ class Timeline2 extends React.Component {
 
 		return (
 			<div style={styles.img}>
-				<Grid container gutter={0} style={styles.grid}>
+				<Grid container style={styles.grid} spacing={0}>
 					<Grid item xs={12} style={styles.heading}>
 						<div style={styles.headingBox}> - What I've Been Up To - </div>
 					</Grid>

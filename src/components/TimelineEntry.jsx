@@ -155,7 +155,7 @@ class TimelineEntry extends React.Component {
 
 		const logoCol = (
 			<Grid item xs={6} style={thumbnailStyles}>
-				<Grid container gutter={0}>
+				<Grid container spacing={0}>
 					{leftLine}
 					<Grid item xs={7} style={thumbnailColStyle}>
 						<div style={thumbnailContainerStyle}>
@@ -201,7 +201,7 @@ class TimelineEntry extends React.Component {
 
 		return (
 			<div>
-				<Grid container gutter={0} style={styles.container}>
+				<Grid container spacing={0} style={styles.container}>
 					{leftCol}
 					{rightCol}
 				</Grid>
