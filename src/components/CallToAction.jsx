@@ -52,7 +52,7 @@ class CallToAction extends React.Component {
 								<Grid container justify='flex-start' alignItems='center' direction='row'>
 									<Grid item xs={2} style={{padding: '6px', textAlign: 'right'}}>
 										<a href='mailto:bellr@mit.edu'>
-											<img src='src/img/contact/email-black-128.png' key='email-bottom' style={styles.logo}></img>
+											<img src={require('../../assets/img/contact/email-black-128.png')} key='email-bottom' style={styles.logo}></img>
 										</a>
 									</Grid>
 									<Grid item xs={10}>
@@ -65,7 +65,7 @@ class CallToAction extends React.Component {
 								<Grid container justify='flex-start' alignItems='center'>
 									<Grid item xs={2} style={{padding: '6px', textAlign: 'right'}}>
 										<a href='https://www.linkedin.com/in/becky-bell-20201/' target="_blank">
-											<img src='src/img/contact/in-cool-black-128.png' key='linked-in-bottom' style={styles.logo}></img>
+											<img src={require('../..//assets/img/contact/in-cool-black-128.png')} key='linked-in-bottom' style={styles.logo}></img>
 										</a>
 									</Grid>
 									<Grid item xs={10}>
@@ -78,7 +78,7 @@ class CallToAction extends React.Component {
 								<Grid container justify='flex-start' alignItems='center'>
 									<Grid item xs={2} style={{padding: '6px', textAlign: 'right'}}>
 										<a href='https://angel.co/beckybell13' target="_blank">
-											<img src='src/img/contact/angel-list-black-128.png' key='angel-list-bottom' style={styles.logo}></img>
+											<img src={require('../..//assets/img/contact/angel-list-black-128.png')} key='angel-list-bottom' style={styles.logo}></img>
 										</a>
 									</Grid>
 									<Grid item xs={10}>
@@ -91,7 +91,7 @@ class CallToAction extends React.Component {
 								<Grid container justify='flex-start' alignItems='center'>
 									<Grid item xs={2} style={{padding: '6px', textAlign: 'right'}}>
 										<a href='https://github.com/beckybell13' target="_blank">
-											<img src='src/img/contact/github-black-128.png' key='github-bottom' style={styles.logo}></img>
+											<img src={require('../..//assets/img/contact/github-black-128.png')} key='github-bottom' style={styles.logo}></img>
 										</a>
 									</Grid>
 									<Grid item xs={10}>

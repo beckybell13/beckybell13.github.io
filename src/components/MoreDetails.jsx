@@ -63,7 +63,7 @@ class MoreDetails extends React.Component {
 			<div style={{padding: '1%'}} id='more-details'>
 				<Grid container style={styles.img} spacing={0}>
 					<Grid item xs={4} sm={4} md={4} lg={4} style={styles.headshotCol}>
-						<img src='src/img/index-background-sq.jpg' style={styles.headshot}></img>
+						<img src={require('../../assets/img/index-background-sq.jpg')} style={styles.headshot}></img>
 					</Grid>
 					<Grid item xs={3} sm={3} md={3} lg={3} style={styles.headingCol}>
 						<div>
@@ -86,10 +86,10 @@ class MoreDetails extends React.Component {
 								fifth-year Masters of Engineering in computer science with the
 								Center for Civic Media at the MIT Media Lab.
 							</p>
-							<Link className='button' to='/portfolio'>
+							<Link className='button' to='/portfolio' style={{textDecoration: 'none'}}>
 								<Button style={styles.portfolioButton}> See Portfolio </Button>
 							</Link>
-							<Link className='button' to='/thesis'>
+							<Link className='button' to='/thesis' style={{textDecoration: 'none'}}>
 								<Button style={styles.downloadButton}> Learn About Thesis </Button>
 							</Link>
 						</div>

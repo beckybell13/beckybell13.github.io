@@ -114,6 +114,17 @@ class TimelineEntry extends React.Component {
 		const styles = this.getStyles();
 		const { imgSrc, logo, title, year, description, leftAligned } = this.props;
 
+		let img;
+		if (imgSrc === 'media cloud') {
+			img = require('../../assets/img/media-cloud-logo.png');
+		} else if (imgSrc === 'mit') {
+			img = require('../../assets/img/mit-aerial-square.jpg');
+		} else if (imgSrc === 'vision2') {
+			img = require('../../assets/img/vision2.jpg');
+		} else {
+			img = require('../../assets/img/chile.jpg');
+		}
+
 		// logo vs. image
 		var thumbnailStyle;
 		var thumbnailContainerStyle;
@@ -159,7 +170,7 @@ class TimelineEntry extends React.Component {
 					{leftLine}
 					<Grid item xs={7} style={thumbnailColStyle}>
 						<div style={thumbnailContainerStyle}>
-							<img src={imgSrc} style={thumbnailStyle}></img>
+							<img src={img} style={thumbnailStyle}></img>
 						</div>
 					</Grid>
 					{rightLine}

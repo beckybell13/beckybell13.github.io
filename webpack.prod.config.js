@@ -58,6 +58,7 @@
 
 var webpack = require('webpack');
 var path = require('path');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -76,6 +77,7 @@ module.exports = {
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
+		new ExtractTextPlugin('styles.css') // only for production
   ],
   module: {
 		loaders: [
@@ -89,18 +91,7 @@ module.exports = {
         }
       },
 			{
-			  test: /\.css$/,
-			  loader: 'style-loader'
-			}, {
-			  test: /\.css$/,
-			  loader: 'css-loader',
-			  query: {
-			    modules: true,
-			    localIdentName: '[name]__[local]___[hash:base64:5]'
-			  }
-			},
-			{
-			  test: /\.(jpg|png|svg|gif)$/,
+			  test: /\.(jpg|png|svg)$/,
 			  use: {
 			    loader: "url-loader",
 			    options: {
@@ -108,10 +99,19 @@ module.exports = {
 			    },
 			  },
 			},
-			{
-			  test: /\.(pdf)$/,
-			  loader: 'file-loader?name=[path][name].[ext]'
-			}
+      {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract(
+          'style-loader',
+          combineLoaders([{
+            loader: 'css-loader',
+            query: {
+              modules: true,
+              localIdentName: '[name]__[local]___[hash:base64:5]'
+            }
+          }])
+        )
+      }
     ]
   }
 };

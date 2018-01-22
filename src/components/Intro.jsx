@@ -9,7 +9,7 @@ class Intro extends React.Component {
 		return {
 			img: {
 				height: '100vh',
-				background: 'url(./src/img/pillars.jpg) no-repeat center center/cover fixed',
+				background: `url(${require('../../assets/img/pillars.jpg')}) no-repeat center center/cover fixed`,
 				padding: '1%',
 			},
 			button: {

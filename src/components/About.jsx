@@ -2,7 +2,6 @@ import React from 'react';
 import Radium from 'radium';
 import Grid from 'material-ui/Grid';
 import Button from 'material-ui/Button';
-
 import Header from './Header.jsx';
 
 class Experience extends React.Component {
@@ -12,7 +11,7 @@ class Experience extends React.Component {
 
 			},
 			banner: {
-				background: 'url(./src/img/news.jpg) no-repeat center center/cover',
+				background: `url(${require('../../assets/img/news.jpg')}) no-repeat center center/cover`,
 				height: '35vh',
 				width: '90%',
 				textAlign: 'center',
@@ -71,7 +70,15 @@ class Experience extends React.Component {
 			},
 			icon: {
 				marginRight: '5%',
-			}
+			},
+			link: {
+				color: '#326891',
+				fontWeight: 'bold',
+				textDecoration: 'none',
+				':hover': {
+					textDecoration: 'underline',
+				},
+			},
 		}
 	}
 
@@ -93,7 +100,7 @@ class Experience extends React.Component {
 				</Grid>
 				<Grid container style={styles.intro} spacing={0}>
 					<Grid item xs={6} style={styles.descriptionTitle}>
-						<img style={styles.icon} src='./src/img/group-48.png'></img>
+						<img style={styles.icon} src={require('../../assets/img/group-48.png')}></img>
 						<p> The news steers the conversations we have as a society </p>
 					</Grid>
 					<Grid item xs={6} style={styles.introTextRight}>
@@ -102,29 +109,29 @@ class Experience extends React.Component {
 								Which events get coverage and which events are ignored?\
 								These are the kinds of questions that media researchers are interested\
 								in exploring. From "}
-								<a className='link' href='https://mediacloud.org/news/2016/6/9/understanding-teen-pregnancy-frames-using-media-cloud-tools'>teen pregnancy</a>
-								{" to "}<a className='link' href='https://mediacloud.org/election-2016'>the election</a>{",\
+								<a style={styles.link} key='thesis-teen-link' href='https://mediacloud.org/news/2016/6/9/understanding-teen-pregnancy-frames-using-media-cloud-tools'>teen pregnancy</a>
+								{" to "}<a style={styles.link} key = 'thesis-election-link' href='https://mediacloud.org/election-2016'>the election</a>{",\
 								the attention and framing of issues can affect how we talk about and understand events in our world."}
 						</p>
 					</Grid>
 				</Grid>
 				<Grid container style={styles.intro} spacing={0}>
 					<Grid item xs={6} style={styles.descriptionTitle}>
-						<img style={styles.icon} src='./src/img/computer-48.png'></img>
+						<img style={styles.icon} src={require('../../assets/img/computer-48.png')}></img>
 						<p> Media Cloud helps researchers understand the coverage and framing of topics in the news </p>
 					</Grid>
 					<Grid item xs={6} style={styles.introTextRight}>
-						<p> <a className='link' href='https://mediacloud.org'>Media Cloud</a>{" is an online research platform where users can use a\
+						<p> <a style={styles.link} key='thesis-cloud-link' href='https://mediacloud.org'>Media Cloud</a>{" is an online research platform where users can use a\
 								suite of tools to analyze news data. It collects and stores data on news stories from top sources and\
 								provides visualization and analysis tools to explore and understand the coverage and content of different topics.\
-								It is a on-going project run out of the "}<a className='link' href='https://civic.mit.edu/'>Center for Civic Media</a>{" at the "}
-								<a className='link' href='https://www.media.mit.edu/'>MIT Media Lab</a>{"."}
+								It is a on-going project run out of the "}<a style={styles.link} key='thesis-civic-link' href='https://civic.mit.edu/'>Center for Civic Media</a>{" at the "}
+								<a style={styles.link} key='thesis-lab-link' href='https://www.media.mit.edu/'>MIT Media Lab</a>{"."}
 						</p>
 					</Grid>
 				</Grid>
 				<Grid container style={styles.intro} spacing={0} >
 					<Grid item xs={6} style={styles.descriptionTitle}>
-						<img style={styles.icon} src='./src/img/data-48.png'></img>
+						<img style={styles.icon} src={require('../../assets/img/data-48.png')}></img>
 						<p>
 							Machine learning and visualization can help researchers
 							make sense of the extensive amount of online news data

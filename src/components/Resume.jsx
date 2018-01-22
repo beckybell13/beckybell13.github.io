@@ -62,6 +62,14 @@ class Experience extends React.Component {
 				maxWidth: '90%',
 				width: '90%',
 			},
+			link: {
+				color: '#326891',
+				fontWeight: 'bold',
+				textDecoration: 'none',
+				':hover': {
+					textDecoration: 'underline',
+				},
+			},
 		}
 	}
 
@@ -74,7 +82,7 @@ class Experience extends React.Component {
 					<Grid container style={styles.portfolioItem} spacing={0} alignItems='center' justify='center'>
 						<Grid item xs={6}>
 							<Grid container justify='center' alignItems='center'>
-								<img src='./src/content/accord-demo-2.gif' style={styles.thumbnail}></img>
+								<img src={require('../../assets/content/accord-demo-2.gif')} style={styles.thumbnail}></img>
 							</Grid>
 						</Grid>
 						<Grid item xs={6} style={styles.textContainer}>
@@ -107,7 +115,7 @@ class Experience extends React.Component {
 									<Chip style={styles.chip} label='Javascript' />
 								</div>
 								<Button style={styles.button}>
-									<a className='button' style={{color:'white'}} href='https://allegro-accord.herokuapp.com/views/login' target="_blank">
+									<a style={{color:'white', textDecoration: 'none'}} href='https://allegro-accord.herokuapp.com/views/login' target="_blank">
 										See it in action
 									</a>
 								</Button>
@@ -141,12 +149,12 @@ class Experience extends React.Component {
 		 							<Chip style={styles.chip} label='AWS' />
 		 						</div>
 	 							<Button style={styles.button}>
-	 								<a className='button' style={{color:'white'}} href='https://github.com/pargaw/MIT_Confessions_Bot' target="_blank">
+	 								<a style={{color:'white', textDecoration: 'none'}} href='https://github.com/pargaw/MIT_Confessions_Bot' target="_blank">
 	 									See the Code
 	 								</a>
 	 							</Button>
 		 						<Button style={styles.button2}>
-		 							<a className='button' style={{color:'white'}} href="./src/content/ms6.pdf" download>
+		 							<a style={{color:'white', textDecoration: 'none'}} href={require("../../assets/content/ms6.pdf")} download>
 		 								Read the Paper
 		 							</a>
 		 						</Button>
@@ -154,7 +162,7 @@ class Experience extends React.Component {
 	 					</Grid>
 	 					<Grid item xs={6}>
 							<Grid container justify='center' alignItems='center'>
-								<img src='./src/img/confessions-wide.png' style={styles.thumbnail}></img>
+								<img src={require('../../assets/img/confessions-wide.png')} style={styles.thumbnail}></img>
 							</Grid>
 	 					</Grid>
 	 				</Grid>
@@ -194,12 +202,12 @@ class Experience extends React.Component {
 		 							<Chip style={styles.chip} label='Javascript' />
 		 						</div>
 		 						<Button style={styles.button}>
-		 							<a className='button' style={{color:'white'}} href='https://github.com/elainewlin/MusicBuddy' target="_blank">
+		 							<a style={{color:'white', textDecoration: 'none'}} href='https://github.com/elainewlin/MusicBuddy' target="_blank">
 		 								See the Code
 		 							</a>
 		 						</Button>
 								<Button style={styles.button2}>
-		 							<a className='button' style={{color:'white'}} href='./src/content/musicbuddy-writeup.pdf' download>
+		 							<a style={{color:'white', textDecoration: 'none'}} href={require('../../assets/content/musicbuddy-writeup.pdf')} download>
 		 								Read the Paper
 		 							</a>
 		 						</Button>
@@ -218,9 +226,9 @@ class Experience extends React.Component {
 	 							</p>
 	 							<p>
 	 								{"Final group project for "}
-	 								<a className='link' href='https://d-lab.mit.edu/'>MIT's D-Lab</a>
+	 								<a style={styles.link} key='port-dlab' href='https://d-lab.mit.edu/'>MIT's D-Lab</a>
 	 								{" course on waste management. Carried out research to support the "}
-	 								<a className='link' href='https://impact-alliance.mit.edu/working-groups/inclusive-recycling-2016'>Practical Impact Alliance's</a>
+	 								<a style={styles.link} key='port- pia' href='https://impact-alliance.mit.edu/working-groups/inclusive-recycling-2016'>Practical Impact Alliance's</a>
 								 	{" conceptual design of a mobile app for waste pickers\
 	 								in Brazil. Case studies involved both online research of exisiting mobile apps as well as\
 	 								interviews with some of the inventors. In addition to case studies,\
@@ -232,7 +240,7 @@ class Experience extends React.Component {
 	 								as well as the diagram designs."}
 	 							</p>
 								<Button style={styles.button}>
-	 								<a className='button' style={{color:'white'}} href="./src/content/waste-picker-case-studies.pdf" download>
+	 								<a style={{color:'white', textDecoration: 'none'}} href={require('../../assets/content/waste-picker-case-studies.pdf')} download>
 	 									Read the Report
 	 								</a>
 	 							</Button>
@@ -240,7 +248,7 @@ class Experience extends React.Component {
 	 					</Grid>
 	 					<Grid item item xs={6}>
 							<Grid container justify='center' alignItems='center'>
-								<img src='./src/img/d-lab-wide.png' style={styles.thumbnail}></img>
+								<img src={require('../../assets/img/d-lab-wide.png')} style={styles.thumbnail}></img>
 							</Grid>
 	 					</Grid>
 	 				</Grid>

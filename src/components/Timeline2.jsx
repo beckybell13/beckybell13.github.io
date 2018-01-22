@@ -71,25 +71,25 @@ class Timeline2 extends React.Component {
 					<Grid item xs={12} style={styles.heading}>
 						<div style={styles.headingBox}> - What I've Been Up To - </div>
 					</Grid>
-					<TimelineEntry imgSrc={'src/img/media-cloud-logo.png'}
+					<TimelineEntry imgSrc={'media cloud'}
 									 leftAligned={true}
 								   logo={true}
 								   title={'Center for Civic Media'}
 								   year={'2017-present'}
 								   description={civicMediaDescription} />
-					<TimelineEntry imgSrc={'src/img/mit-aerial-square.jpg'}
+								 <TimelineEntry imgSrc={'mit'}
 									 leftAligned={false}
 								   logo={false}
 								   title={'MIT'}
 								   year={'2013 - 2017'}
 								   description={mitDescription} />
-					<TimelineEntry imgSrc={'src/img/vision2.jpg'}
+								 <TimelineEntry imgSrc={'vision2'}
 									 leftAligned={true}
 								   logo={true}
 								   title={'Vision2'}
 								   year={'2016'}
 								   description={vision2Description} />
-					<TimelineEntry imgSrc={'src/img/chile.jpg'}
+								 <TimelineEntry imgSrc={'chile'}
 									 leftAligned={false}
 								   logo={false}
 								   title={'MISTI Chile'}

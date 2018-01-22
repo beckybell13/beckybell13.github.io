@@ -16,16 +16,6 @@ body {
   flex: 1 1 100%;
 }
 
-a.link:link, a.link:visited {
-	color: #326891;
-	font-weight: bold;
-	text-decoration: none;
-}
-
-a.link:hover {
-	text-decoration: underline;
-}
-
 .button {
 	text-decoration: none !important;
 }
