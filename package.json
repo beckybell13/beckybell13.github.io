@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node app",
     "build": "webpack --config ./webpack.prod.config.js --progress --profile --colors",
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
+    "deploy": "gh-pages -d dist"
   },
   "author": "Becky Bell",
   "license": "MIT",
@@ -23,6 +23,7 @@
     "express": "^4.16.2",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",
+    "gh-pages": "^1.1.0",
     "jquery": "^3.2.1",
     "konva": "^1.6.8",
     "material-ui": "^1.0.0-beta.3",
