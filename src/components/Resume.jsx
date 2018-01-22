@@ -154,7 +154,7 @@ class Experience extends React.Component {
 	 								</a>
 	 							</Button>
 		 						<Button style={styles.button2}>
-		 							<a style={{color:'white', textDecoration: 'none'}} href={require("../../assets/content/ms6.pdf")} download>
+		 							<a style={{color:'white', textDecoration: 'none'}} href='https://github.com/pargaw/MIT_Confessions_Bot'>
 		 								Read the Paper
 		 							</a>
 		 						</Button>
@@ -207,7 +207,7 @@ class Experience extends React.Component {
 		 							</a>
 		 						</Button>
 								<Button style={styles.button2}>
-		 							<a style={{color:'white', textDecoration: 'none'}} href={require('../../assets/content/musicbuddy-writeup.pdf')} download>
+		 							<a style={{color:'white', textDecoration: 'none'}} href='https://github.com/pargaw/MIT_Confessions_Bot'>
 		 								Read the Paper
 		 							</a>
 		 						</Button>
@@ -240,7 +240,7 @@ class Experience extends React.Component {
 	 								as well as the diagram designs."}
 	 							</p>
 								<Button style={styles.button}>
-	 								<a style={{color:'white', textDecoration: 'none'}} href={require('../../assets/content/waste-picker-case-studies.pdf')} download>
+	 								<a style={{color:'white', textDecoration: 'none'}} href='https://github.com/pargaw/MIT_Confessions_Bot'>
 	 									Read the Report
 	 								</a>
 	 							</Button>

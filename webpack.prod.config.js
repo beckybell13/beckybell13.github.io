@@ -5,7 +5,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 // var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  // devtool: 'cheap-module-eval-source-map',
+  //devtool: 'cheap-module-eval-source-map', /*warning: this kills the memory */
   entry: [
     // './src/index.js'
     path.join(__dirname, 'src/index.js')
@@ -15,8 +15,10 @@ module.exports = {
     // publicPath: '/public/',
     // filename: 'bundle.js'
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name]-[hash].min.js',
-    publicPath: '/'
+    // filename: '[name]-[hash].min.js',
+    filename: '[name].min.js',
+    // publicPath: '/'
+    publicPath: 'beckybell13.github.io/personal-website/'
   },
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
