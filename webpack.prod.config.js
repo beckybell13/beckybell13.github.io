@@ -1,71 +1,11 @@
-/*
- * ./webpack.config.js
- */
-
-// TODO: will need to add a css loader eventually
-//		see docs: https://webpack.github.io/docs/list-of-loaders.html
-
-
-// const path = require('path');
-//
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-// 	template: './src/index.html',
-// 	filename: 'index.html',
-// 	inject: 'body'
-// });
-//
-// module.exports = {
-// 	entry: './src/index.js',
-// 	output: {
-// 		path: path.resolve('dist'),
-// 		filename: 'index_bundle.js'
-// 	},
-// 	module: {
-// 		loaders: [
-// 			{ test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
-// 			{ test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ },
-// 			{ test: /\.css$/, loader: 'style-loader!css-loader', include: /flexboxgrid/ }
-// 		]
-// 	},
-// 	plugins: [HtmlWebpackPluginConfig]
-// }
-
-// const path = require('path')
-// const webpack = require('webpack')
-//
-// module.exports = {
-//   entry: ['./src/index.js', 'webpack-hot-middleware/client', 'webpack/hot/dev-server'],
-//   output: {
-//     path: __dirname,
-//     filename: 'bundle.js',
-//     publicPath: '/src/assets/'
-//   },
-//   module: {
-//     loaders: [
-//       {
-//         test: /.jsx?$/,
-//         loader: 'babel-loader',
-//         include: path.join(__dirname, 'src'),
-//         exclude: /node_modules/,
-//         query: {
-//           presets: ['es2015', 'react']
-//         }
-//       }
-//     ]
-//   },
-// };
 
 var webpack = require('webpack');
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  devtool: 'cheap-module-eval-source-map',
   context: __dirname,
   entry: [
-    'react-hot-loader/patch',
-    'webpack-hot-middleware/client?quiet=true',
     './src/index.js'
   ],
   output: {
@@ -74,10 +14,15 @@ module.exports = {
     filename: 'bundle.js'
   },
   plugins: [
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin(),
-		new ExtractTextPlugin('styles.css') // only for production
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production')
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+        minimize: true
+    })
+		//new ExtractTextPlugin('styles.css') // only for production
   ],
   module: {
 		loaders: [
