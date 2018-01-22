@@ -41,7 +41,9 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 
-app.get('*', function(req, res) {
+app.use(express.static('/public', express.static(path.join(__dirname, 'public'))))
+
+app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
