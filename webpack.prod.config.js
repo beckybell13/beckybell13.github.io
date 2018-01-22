@@ -27,9 +27,12 @@ module.exports = {
       inject: 'body',
       filename: 'index.html'
     }),
-    new webpack.optimize.UglifyJsPlugin({
-        minimize: true
-    }),
+    // new webpack.optimize.UglifyJsPlugin({
+    //   compressor: {
+    //     warnings: false,
+    //     //screw_ie8: true
+    //   }
+    // }),
     new webpack.DefinePlugin({
       'process.env': {
         // NODE_ENV: JSON.stringify('production')
@@ -51,8 +54,11 @@ module.exports = {
 			{
         test: /.jsx?$/,
         exclude: /node_modules/,
-				use: {
-          loader: "babel-loader"
+        loader: "babel-loader",
+        query: {
+          presets: ['es2015', 'react', [ 'env', {
+            targets: { node: 'current' }
+          } ]]
         }
       },
 			{

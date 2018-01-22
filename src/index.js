@@ -17,11 +17,11 @@ require('../assets/styles/root.css');
 
 render(
 		<StyleRoot>
-			<BrowserRouter>
+			<HashRouter>
 				<ScrollToTop>
 					<AppContainer />
 				</ScrollToTop>
-			</BrowserRouter>
+			</HashRouter>
 		</StyleRoot>,
 	document.getElementById('root')
 );
