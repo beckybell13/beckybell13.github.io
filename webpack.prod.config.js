@@ -35,8 +35,8 @@ module.exports = {
           presets: ['es2015', 'react']
         }
       },
-			{
-			  test: /\.(jpg|png|svg)$/,
+      {
+			  test: /\.(jpg|png|svg|gif)$/,
 			  use: {
 			    loader: "url-loader",
 			    options: {
@@ -44,19 +44,21 @@ module.exports = {
 			    },
 			  },
 			},
+			{
+			  test: /\.(pdf)$/,
+			  loader: 'file-loader?name=[path][name].[ext]'
+			},
       {
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract(
-          'style-loader',
-          combineLoaders([{
-            loader: 'css-loader',
-            query: {
-              modules: true,
-              localIdentName: '[name]__[local]___[hash:base64:5]'
-            }
-          }])
-        )
-      }
+			  test: /\.css$/,
+			  loader: 'style-loader'
+			}, {
+			  test: /\.css$/,
+			  loader: 'css-loader',
+			  query: {
+			    modules: true,
+			    localIdentName: '[name]__[local]___[hash:base64:5]'
+			  }
+			}
     ]
   }
 };
