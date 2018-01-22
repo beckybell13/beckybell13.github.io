@@ -1,15 +1,8 @@
-const path = require('path')
-const express = require('express')
-
-module.exports = {
-  app: function () {
-    const app = express();
-    const indexPath = path.join(__dirname, 'indexDep.html');
-    const publicPath = express.static(path.join(__dirname, '../dist'));
-
-    app.use('/dist', publicPath);
-    app.get('/', function (_, res) { res.sendFile(indexPath) });
-
-    return app;
-  }
-}
+var express = require('express');
+var path = require('path');
+var serveStatic = require('serve-static');
+app = express();
+app.use(serveStatic(__dirname));
+var port = process.env.PORT || 5000;
+app.listen(port);
+console.log('server started '+ port);
