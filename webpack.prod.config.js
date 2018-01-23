@@ -7,18 +7,13 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   //devtool: 'cheap-module-eval-source-map', /*warning: this kills the memory */
   entry: [
-    // './src/index.js'
     path.join(__dirname, 'src/index.js')
   ],
   output: {
-    // path: path.join(__dirname, 'public'),
-    // publicPath: '/public/',
-    // filename: 'bundle.js'
     path: path.resolve(__dirname, 'dist'),
     // filename: '[name]-[hash].min.js',
     filename: '[name].min.js',
     publicPath: './'
-    // publicPath: 'beckybell13.github.io/personal-website/'
   },
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
@@ -27,12 +22,11 @@ module.exports = {
       inject: 'body',
       filename: 'index.html'
     }),
-    // new webpack.optimize.UglifyJsPlugin({
-    //   compressor: {
-    //     warnings: false,
-    //     //screw_ie8: true
-    //   }
-    // }),
+    new webpack.optimize.UglifyJsPlugin({
+      compressor: {
+        warnings: false,
+      }
+    }),
     new webpack.DefinePlugin({
       'process.env': {
         // NODE_ENV: JSON.stringify('production')
@@ -79,47 +73,34 @@ module.exports = {
 					loader: 'css-loader'
 				}
 			},
-			{
-				test: /\.(jpg|png|svg|gif)$/,
-				use: {
-					loader: "url-loader",
-				}
-			}
+      {
+        test: /\.(jpe?g|png|svg|gif)$/,
+        use: [
+          'file-loader', {
+            loader: 'image-webpack-loader',
+            options: {
+              gifsicle: {
+                interlaced: false,
+              },
+              optipng: {
+                optimizationLevel: 7,
+              },
+              pngquant: {
+                quality: '65-90',
+                speed: 4
+              },
+              mozjpeg: {
+                progressive: true,
+                quality: 65
+              },
+              // Specifying webp here will create a WEBP version of your JPG/PNG images
+              webp: {
+                quality: 75
+              }
+            }
+          }
+        ]
+      }
 		],
-		// loaders: [
-    //   {
-    //     test: /.jsx?$/,
-    //     loader: 'babel-loader',
-    //     include: path.join(__dirname, 'src'),
-    //     exclude: /node_modules/,
-    //     query: {
-    //       presets: ['es2015', 'react']
-    //     }
-    //   },
-    //   {
-		// 	  test: /\.(jpg|png|svg|gif)$/,
-		// 	  use: {
-		// 	    loader: "url-loader",
-		// 	    options: {
-		// 	      limit: 25000,
-		// 	    },
-		// 	  },
-		// 	},
-		// 	{
-		// 	  test: /\.(pdf)$/,
-		// 	  loader: 'file-loader?name=[path][name].[ext]'
-		// 	},
-    //   {
-		// 	  test: /\.css$/,
-		// 	  loader: 'style-loader'
-		// 	}, {
-		// 	  test: /\.css$/,
-		// 	  loader: 'css-loader',
-		// 	  query: {
-		// 	    modules: true,
-		// 	    localIdentName: '[name]__[local]___[hash:base64:5]'
-		// 	  }
-		// 	}
-    // ]
   }
 };
