@@ -16,11 +16,7 @@ body {
   flex: 1 1 100%;
 }
 
-.button {
-	text-decoration: none !important;
-}
-
-button:hover {
+.button:hover {
 	background-color: #c0c3c6 !important;
 }
 

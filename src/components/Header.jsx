@@ -79,13 +79,13 @@ class Header extends React.Component {
 					<Grid item sm={5} md={7} lg={8}>
 						<div style={styles.col1}>
 							<div style={styles.buttons} key='home' id='home' className='menu'>
-								<Link className='button' to='/' style={styles.links}>HOME</Link>
+								<Link to='/' style={styles.links}>HOME</Link>
 							</div>
 							<div style={styles.buttons} key='thesis' id='thesis' className='menu'>
-								<Link className='button' to='/thesis' style={styles.links}>THESIS</Link>
+								<Link to='/thesis' style={styles.links}>THESIS</Link>
 							</div>
 							<div style={styles.buttons} key='portfolio' id='portfolio' className='menu'>
-								<Link className='button' to='/portfolio' style={styles.links}>PORTFOLIO</Link>
+								<Link to='/portfolio' style={styles.links}>PORTFOLIO</Link>
 							</div>
 						</div>
 					</Grid>

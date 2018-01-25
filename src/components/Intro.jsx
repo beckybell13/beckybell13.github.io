@@ -54,7 +54,7 @@ class Intro extends React.Component {
 								<div style={styles.details}>
 									<p> A new grad passionate about <br></br> tech for good. </p>
 								</div>
-								<Button style={styles.button} onClick={this.learnMoreClick}> Learn more </Button>
+								<Button style={styles.button} className='button' onClick={this.learnMoreClick}> Learn more </Button>
 							</div>
 						</Grid>
 					</Grid>

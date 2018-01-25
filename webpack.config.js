@@ -30,10 +30,10 @@ module.exports = {
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
-		new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('development')
-    }),
-    new BundleAnalyzerPlugin()
+		// new webpack.DefinePlugin({
+    //   'process.env.NODE_ENV': JSON.stringify('development')
+    // }),
+    //new BundleAnalyzerPlugin()
   ],
   module: {
 		rules: [
@@ -45,11 +45,14 @@ module.exports = {
           }
         ]
       },
-			{
+      {
         test: /.jsx?$/,
         exclude: /node_modules/,
-				use: {
-          loader: "babel-loader"
+        loader: "babel-loader",
+        query: {
+          presets: ['es2015', 'react', [ 'env', {
+            targets: { node: 'current' }
+          } ]]
         }
       },
 			{

@@ -86,11 +86,11 @@ class MoreDetails extends React.Component {
 								fifth-year Masters of Engineering in computer science with the
 								Center for Civic Media at the MIT Media Lab.
 							</p>
-							<Link className='button' to='/portfolio' style={{textDecoration: 'none'}}>
-								<Button style={styles.portfolioButton}> See Portfolio </Button>
+							<Link to='/portfolio' style={{textDecoration: 'none'}}>
+								<Button className='button' style={styles.portfolioButton}> See Portfolio </Button>
 							</Link>
-							<Link className='button' to='/thesis' style={{textDecoration: 'none'}}>
-								<Button style={styles.downloadButton}> Learn About Thesis </Button>
+							<Link to='/thesis' style={{textDecoration: 'none'}}>
+								<Button className='button' style={styles.downloadButton}> Learn About Thesis </Button>
 							</Link>
 						</div>
 					</Grid>

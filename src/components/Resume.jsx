@@ -114,10 +114,8 @@ class Experience extends React.Component {
 									<Chip style={styles.chip} label='HTML/CSS' />
 									<Chip style={styles.chip} label='Javascript' />
 								</div>
-								<Button style={styles.button}>
-									<a style={{color:'white', textDecoration: 'none'}} href='https://allegro-accord.herokuapp.com/views/login' target="_blank">
-										See it in action
-									</a>
+								<Button style={styles.button} className='button' href='https://allegro-accord.herokuapp.com/views/login' target="_blank">
+									See it in action
 								</Button>
 							</Grid>
 						</Grid>
@@ -148,15 +146,11 @@ class Experience extends React.Component {
 		 							<Chip style={styles.chip} label='Python' />
 		 							<Chip style={styles.chip} label='AWS' />
 		 						</div>
-	 							<Button style={styles.button}>
-	 								<a style={{color:'white', textDecoration: 'none'}} href='https://github.com/pargaw/MIT_Confessions_Bot' target="_blank">
-	 									See the Code
-	 								</a>
+	 							<Button style={styles.button}  className='button' href='https://github.com/pargaw/MIT_Confessions_Bot' target="_blank">
+	 								See the Code
 	 							</Button>
-		 						<Button style={styles.button2}>
-		 							<a style={{color:'white', textDecoration: 'none'}} href='https://github.com/pargaw/MIT_Confessions_Bot'>
-		 								Read the Paper
-		 							</a>
+		 						<Button style={styles.button2} className='button' href='https://drive.google.com/open?id=1jAuLPLoRGJnHuiufZlGBLMh0JaCu-09K' target="_blank">
+		 							Read the Paper
 		 						</Button>
 							</Grid>
 	 					</Grid>
@@ -201,15 +195,11 @@ class Experience extends React.Component {
 		 							<Chip style={styles.chip} label='HTML/CSS' />
 		 							<Chip style={styles.chip} label='Javascript' />
 		 						</div>
-		 						<Button style={styles.button}>
-		 							<a style={{color:'white', textDecoration: 'none'}} href='https://github.com/elainewlin/MusicBuddy' target="_blank">
-		 								See the Code
-		 							</a>
+		 						<Button style={styles.button} className='button' href='https://github.com/elainewlin/MusicBuddy' target="_blank">
+		 							See the Code
 		 						</Button>
-								<Button style={styles.button2}>
-		 							<a style={{color:'white', textDecoration: 'none'}} href='https://github.com/pargaw/MIT_Confessions_Bot'>
-		 								Read the Paper
-		 							</a>
+								<Button style={styles.button2} className='button' href='https://drive.google.com/open?id=1f9K7ytCdOtXtEaouP1pmwxIewVGnRM5C' target="_blank">
+		 							Read the Paper
 		 						</Button>
 							</Grid>
 	 					</Grid>
@@ -239,10 +229,8 @@ class Experience extends React.Component {
 	 								include the 'Kabadiwalla Connect' and 'I Got Garbage' case studies\
 	 								as well as the diagram designs."}
 	 							</p>
-								<Button style={styles.button}>
-	 								<a style={{color:'white', textDecoration: 'none'}} href='https://github.com/pargaw/MIT_Confessions_Bot'>
-	 									Read the Report
-	 								</a>
+								<Button style={styles.button} className='button' href='https://drive.google.com/open?id=1BDmrEPl7fQU8hYExKb7Z_AFS8mrT1MJ6' target="_blank">
+	 								Read the Report
 	 							</Button>
 							</Grid>
 	 					</Grid>
