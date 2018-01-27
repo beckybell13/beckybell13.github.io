@@ -44,12 +44,12 @@ class MoreDetails extends React.Component {
 				textAlign: 'left',
 				color: '#8F4038',
 			},
-			downloadButton: {
+			portfolioButton: {
 				background: '#86a1a5',
 				color: 'white',
 				marginLeft: '1%',
 			},
-			portfolioButton: {
+			downloadButton: {
 				background: '#8F4038',
 				color: 'white',
 				marginRight: '1%',
@@ -86,11 +86,14 @@ class MoreDetails extends React.Component {
 								fifth-year Masters of Engineering in computer science with the
 								Center for Civic Media at the MIT Media Lab.
 							</p>
+							<Button className='button'
+											style={styles.downloadButton}
+											href='https://drive.google.com/open?id=1TFoejGKkFEhRlqTGHpm3N4LX7bL6Ua6n'
+											target="_blank">
+							See Resume
+							</Button>
 							<Link to='/portfolio' style={{textDecoration: 'none'}}>
-								<Button className='button' style={styles.portfolioButton}> See Portfolio </Button>
-							</Link>
-							<Link to='/thesis' style={{textDecoration: 'none'}}>
-								<Button className='button' style={styles.downloadButton}> Learn About Thesis </Button>
+								<Button className='button' style={styles.portfolioButton}> Browse Portfolio </Button>
 							</Link>
 						</div>
 					</Grid>
