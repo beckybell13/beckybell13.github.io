@@ -10,6 +10,11 @@ class Header extends React.Component {
 		return {
 			headerBar: {
 				height: '15vh',
+				position: 'absolute',
+				top: '0px',
+				left: '0px',
+				padding: '1%',
+				// backgroundColor: '#edeff2',
 			},
 			col1: {
 				margin: '0% 0% 0% 8%',

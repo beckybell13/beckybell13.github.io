@@ -10,14 +10,13 @@ class Intro extends React.Component {
 			img: {
 				height: '100vh',
 				background: `url(${require('../../assets/img/pillars.jpg')}) no-repeat center center/cover fixed`,
-				padding: '1%',
 			},
 			button: {
 				background: '#86a1a5',
 				color: 'white',
 			},
 			banner: {
-				height: '60vh',
+				height: '100vh',
 			},
 			heading: {
 				fontSize: '70px',

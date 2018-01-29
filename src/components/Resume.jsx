@@ -4,6 +4,7 @@ import Grid from 'material-ui/Grid';
 import Chip from 'material-ui/Chip';
 import Button from 'material-ui/Button';
 import Header from './Header.jsx';
+import Spacer from './Spacer.jsx';
 
 class Experience extends React.Component {
 	getStyles() {
@@ -76,8 +77,9 @@ class Experience extends React.Component {
 	render() {
 		const styles = this.getStyles();
 		return (
-			<div style={{padding: '1%'}}>
+			<div>
 				<Header textColor={'black'} active={'portfolio'}/>
+				<Spacer propHeight='15vh'></Spacer>
 				<div style={{padding: 48}}>
 					<Grid container style={styles.portfolioItem} spacing={0} alignItems='center' justify='center'>
 						<Grid item xs={6}>

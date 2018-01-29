@@ -13,10 +13,8 @@ class Timeline2 extends React.Component {
 				marginTop: '5%',
 				backgroundColor: '#86a1a5',
 				height: '250vh',
-				padding: '1%',
 			},
 			grid: {
-				//height: '100vh',
 				display: 'flex',
 				justifyContent: 'center',
 				alignItems: 'center',
