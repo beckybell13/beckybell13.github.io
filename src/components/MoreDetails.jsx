@@ -88,7 +88,7 @@ class MoreDetails extends React.Component {
 							</p>
 							<Button className='button'
 											style={styles.downloadButton}
-											href='https://drive.google.com/file/d/1OLYn44wQr3XvOo-qgq0a6bXK4g5LN9qO/view?usp=sharing'
+											href='https://drive.google.com/file/d/1phn6xy-MzUCFHaNQDIFahEE4nCNxXTma/view?usp=sharing'
 											target="_blank">
 							See Resume
 							</Button>
