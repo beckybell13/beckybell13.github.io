@@ -2,7 +2,8 @@ import React from 'react';
 import Radium from 'radium';
 import Grid from 'material-ui/Grid';
 import Button from 'material-ui/Button';
-import Header from './Header.jsx';
+
+import Header from '../Header.jsx';
 
 class Intro extends React.Component {
 	getStyles() {
@@ -49,9 +50,9 @@ class Intro extends React.Component {
 					<Grid item xs={4}>
 						<Grid container justify='flex-start' alignItems='center'>
 							<div>
-								<p style={styles.heading}>Hi, I'm Becky.</p>
+								<p style={styles.heading}>Hi, I'm Becky</p>
 								<div style={styles.details}>
-									<p> A new grad passionate about <br></br> tech for good. </p>
+									<p> A new grad excited about <br></br> tech for good </p>
 								</div>
 								<Button style={styles.button} className='button' onClick={this.learnMoreClick}> Learn more </Button>
 							</div>

@@ -3,10 +3,11 @@ import Radium from 'radium';
 import Grid from 'material-ui/Grid';
 import Chip from 'material-ui/Chip';
 import Button from 'material-ui/Button';
-import Header from './Header.jsx';
-import Spacer from './Spacer.jsx';
 
-class Experience extends React.Component {
+import Header from '../Header.jsx';
+import Spacer from '../util/Spacer.jsx';
+
+class Portfolio extends React.Component {
 	getStyles() {
 		return {
 			portfolioItem: {
@@ -95,18 +96,21 @@ class Experience extends React.Component {
 										Online platform for music groups to suggest, discuss, and curate songs for setlists
 									</p>
 									<p>
-										Final group project for Software Studio class in Fall 2016. Designed and built
-										a fully-functional, full-stack web application from scratch
-										in one month in a team of four. Used languages and frameworks
-										learned throughout the course of the semester such as javascript,
-										NodeJS, mongoose, and Express. Learned React during course of the project.
+										{'Accord is the result of a final group project for a \
+											software design class that I took in Fall 2016. My team of \
+											four designed and implemented a functional, full-stack web \
+											application from scratch in one month using languages and \
+											frameworks covered throughout the course of the semester \
+											such as Javascript, NodeJS, Mongoose, and Express. We also \
+											used the project as an opportunity for a crash-course in React.'}
 									</p>
 									<p>
-										The design of the data model and interface was completed as
-										 a group during team meetings. Additional personal contributions
-										 include the implementation of the log-in, registration, account,
-										 and group pages as well as integration with a lyric API for
-										 users to find lyrics to a suggested song.
+										{'The design of the data model and interface was completed \
+											as a group during team meetings. Additional personal \
+											contributions include the implementation of the log-in, \
+											registration, account, and group pages as well as \
+											integration with an existing lyric API to enable the \
+											user to auto-populate the lyrics field for a suggested song.'}
 									</p>
 								</div>
 								<div style={styles.chipContainer}>
@@ -130,18 +134,23 @@ class Experience extends React.Component {
 								<p style={styles.title}>MIT Confessions Bot</p>
 		 						<div>
 		 							<p style={styles.subtitle}>
-		 								Neural nets that mimic style and tone of posts made on the MIT Confessions Facebook page
+		 								Neural nets that mimic the style of posts made on the MIT Confessions Facebook page
 		 							</p>
 		 							<p>
-		 								Final group project for graduate-level machine learning class in Fall 2017. Trained
-		 								and compared performance of different types of recurrent neural networks
-		 								for language modeling task in team of three using the Keras deep learning library.
+		 								{'The \'Confessions\' Bot is the result of a final group \
+											project for a graduate-level machine learning class that I \
+											took in Fall 2017. Inspired by Andrej Karpathy\'s ' }
+											<a style={styles.link} key='port-blog' href='http://karpathy.github.io/2015/05/21/rnn-effectiveness/' target="_blank">blog post</a>
+											{', my team of three trained and compared the performance \
+											 of different recurrent neural network architectures in \
+											 generating language similar to that of the posts made on \
+											 the MIT Confessions Facebook page.'}
 		 							</p>
 		 							<p>
-										Neural architecture designs were completed as a team along
-		 								with code review and debugging. Additional personal contributions include the
-		 								adaptation of an open-source Facebook post scraper, Jupyter Notebook and GPU configuration for AWS, and
-		 								generating text using the trained models.
+										{'The neural architecture designs were completed as a team along\
+			 								with code review and debugging. Additional personal contributions include the \
+			 								adaptation of an open-source Facebook post scraper, Jupyter Notebook and GPU configuration for AWS, and \
+			 								generating text using the trained models.'}
 		 							</p>
 		 						</div>
 								<div style={styles.chipContainer}>
@@ -180,17 +189,19 @@ class Experience extends React.Component {
 		 								on online chord charts for hands-free ukulele playing
 		 							</p>
 		 							<p>
-										Final group project for graduate-level multi-modal UI design class in Spring 2017.
-										 Designed and built in a team of three a client-side web app
-										 that tracks and combines voice, motion, and gaze to determine
-										 when and how fast to scroll the window while a user plays the
-										 ukulele. Designed and conducted a small user study to test
-										 system and collect data for a subsequent design iteration.
+										{'Music Buddy is the result of a final group project for a \
+											graduate-level multi-modal UI design class that I took in \
+											Spring 2017. My team of three designed and built a \
+											client-side web app that tracks and combines voice, motion, \
+											and gaze to determine when and how fast to scroll the \
+											window while a user plays the ukulele. We also designed \
+											and conducted a small user study to test the system and \
+											collect data for a subsequent design iteration.'}
 		 							</p>
 		 							<p>
-										System and study design were completed as a team.
-		 								Additional personal contributions include the controls to toggle modality functions
-										and major source code refactorization.
+										{'The system and study design were completed as a team. \
+		 								 Additional personal contributions include the controls to \
+										 toggle modality functions and major source code refactorization.'}
 		 							</p>
 								</div>
 								<div style={styles.chipContainer}>
@@ -217,19 +228,19 @@ class Experience extends React.Component {
 	 								Report and evaluation of existing mobile apps for waste pickers
 	 							</p>
 	 							<p>
-	 								{"Final group project for "}
-	 								<a style={styles.link} key='port-dlab' href='https://d-lab.mit.edu/'>MIT's D-Lab</a>
-	 								{" course on waste management. Carried out research to support the "}
-	 								<a style={styles.link} key='port- pia' href='https://impact-alliance.mit.edu/working-groups/inclusive-recycling-2016'>Practical Impact Alliance's</a>
+	 								{"This report is the result of a final group project for "}
+	 								<a style={styles.link} key='port-dlab' href='https://d-lab.mit.edu/' target="_blank">MIT's D-Lab</a>
+	 								{" course on waste management that I took in Fall 2016. A fellow \
+										classmate and I carried out research to support the "}
+	 								<a style={styles.link} key='port- pia' href='https://impact-alliance.mit.edu/working-groups/inclusive-recycling-2016' target="_blank">Practical Impact Alliance's</a>
 								 	{" conceptual design of a mobile app for waste pickers\
 	 								in Brazil. Case studies involved both online research of exisiting mobile apps as well as\
 	 								interviews with some of the inventors. In addition to case studies,\
-	 								we also developed criteria for success based on local and cultural context."}
+	 								we also developed a set of criteria for success based on local and cultural context."}
 	 							</p>
 	 							<p>
-	 								{"Research and interviews were completed with a fellow student. Additional personal contributions\
-	 								include the 'Kabadiwalla Connect' and 'I Got Garbage' case studies\
-	 								as well as the diagram designs."}
+	 								{"Additional personal contributions include the 'Kabadiwalla Connect'\
+										and 'I Got Garbage' case studies as well as the diagram designs."}
 	 							</p>
 								<Button style={styles.button} className='button' href='https://drive.google.com/open?id=1BDmrEPl7fQU8hYExKb7Z_AFS8mrT1MJ6' target="_blank">
 	 								Read the Report
@@ -248,4 +259,4 @@ class Experience extends React.Component {
 	}
 }
 
-export default Radium(Experience);
+export default Radium(Portfolio);

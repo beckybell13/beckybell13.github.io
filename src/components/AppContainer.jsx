@@ -1,9 +1,8 @@
 import React from 'react';
-import Main from './Main.jsx';
-import Footer from './Footer.jsx'
 import Grid from 'material-ui/Grid';
 
-// {{ flexGrow: '1' }}
+import Main from './Main.jsx';
+import Footer from './Footer.jsx'
 
 class AppContainer extends React.Component {
 	render() {

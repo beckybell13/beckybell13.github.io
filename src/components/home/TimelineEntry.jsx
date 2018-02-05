@@ -29,13 +29,11 @@ class TimelineEntry extends React.Component {
 				alignItems: 'center',
 			},
 			thumbnailCircle: {
-				//width: '220px',
 				height: '220px',
 				borderRadius: '100%',
 				border: 'solid 2px white',
 			},
 			logo: {
-				//width: '120px',
 				height: '130px',
 			},
 			logoContainer: {

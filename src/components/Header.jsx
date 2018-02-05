@@ -14,7 +14,6 @@ class Header extends React.Component {
 				top: '0px',
 				left: '0px',
 				padding: '1%',
-				// backgroundColor: '#edeff2',
 			},
 			col1: {
 				margin: '0% 0% 0% 8%',
@@ -98,22 +97,22 @@ class Header extends React.Component {
 						<Grid container justify='center' alignItems='center'>
 							<Grid item md={2} style={styles.test}>
 								<a href='mailto:bellr@mit.edu' style={styles.col2}>
-									<img src={require(`../../assets/img/contact/email-${textColor}-64.png`)} key='email' style={styles.logo}></img>
+									<img src={require(`../assets/img/contact/email-${textColor}-64.png`)} key='email' style={styles.logo}></img>
 								</a>
 							</Grid>
 							<Grid item md={2} style={styles.test}>
 								<a href='https://www.linkedin.com/in/becky-bell-20201/' target="_blank" style={styles.col2}>
-									<img src={require(`../../assets/img/contact/in-cool-${textColor}-64.png`)} key='linked' style={styles.logo}></img>
+									<img src={require(`../assets/img/contact/in-cool-${textColor}-64.png`)} key='linked' style={styles.logo}></img>
 								</a>
 							</Grid>
 							<Grid item md={2} style={styles.test}>
 								<a href='https://angel.co/beckybell13' target="_blank" style={styles.col2}>
-									<img src={require(`../../assets/img/contact/angel-list-${textColor}-64.png`)} key='angel' style={styles.logo}></img>
+									<img src={require(`../assets/img/contact/angel-list-${textColor}-64.png`)} key='angel' style={styles.logo}></img>
 								</a>
 							</Grid>
 							<Grid item md={2} style={styles.test}>
 								<a href='https://github.com/beckybell13' target="_blank" style={styles.col2}>
-									<img src={require(`../../assets/img/contact/github-${textColor}-64.png`)} key='github' style={styles.logo}></img>
+									<img src={require(`../assets/img/contact/github-${textColor}-64.png`)} key='github' style={styles.logo}></img>
 								</a>
 							</Grid>
 					</Grid>

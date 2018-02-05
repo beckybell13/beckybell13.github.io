@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Grid from 'material-ui/Grid';
 import Button from 'material-ui/Button';
 
-class MoreDetails extends React.Component {
+class Details extends React.Component {
 	getStyles() {
 		return {
 			img: {
@@ -17,7 +17,6 @@ class MoreDetails extends React.Component {
 				alignItems: 'center',
 				padding: '0% 15% 0% 0%',
 				/* text */
-				textAlign: 'justify',
 				fontSize: '20px',
 				fontFamily: 'Source Sans Pro, sans-serif',
 			},
@@ -69,16 +68,16 @@ class MoreDetails extends React.Component {
 						<div>
 							Developer,<br></br>
 							Researcher,<br></br>
-							Organizer,<br></br>
-							Teacher<br></br>
+							Design<br></br>
+							Enthusiast
 						</div>
 					</Grid>
 					<Grid item xs={5} sm={5} md={5} lg={5} style={styles.contentCol}>
 						<div>
 							<p>
 								I'm a recent MIT computer science graduate who is excited about
-								using technology to build tools that empower people and organizations,
-								especially in the public sector.
+								using technology to build tools that empower people and organizations
+								particularly in the nonprofit sector.
 								I'm also interested in making tech more accessible through
 								education and intuitive UI design.
 							<br></br><br></br>
@@ -103,4 +102,4 @@ class MoreDetails extends React.Component {
 	}
 }
 
-export default Radium(MoreDetails);
+export default Radium(Details);

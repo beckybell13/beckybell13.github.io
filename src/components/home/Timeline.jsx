@@ -3,10 +3,10 @@ import Radium from 'radium';
 import Grid from 'material-ui/Grid';
 import Paper from 'material-ui/Paper';
 import Typography from 'material-ui/Typography';
+
 import TimelineEntry from './TimelineEntry.jsx';
 
-
-class Timeline2 extends React.Component {
+class Timeline extends React.Component {
 	getStyles() {
 		return {
 			img: {
@@ -42,7 +42,7 @@ class Timeline2 extends React.Component {
 																	 learning features as part of my MEng thesis.';
 
 	 const mitDescription = 'I recently finished my time as an undergrad at MIT, an extremely \
-	 												 challenging, but rewarding, experience. \
+	 												 challenging, but rewarding experience. \
 													 I\'ve had the privilege to meet and work with talented, passionate, \
 													 and kind people. My time here has encouraged me to take bigger risks, \
 													 face difficult problems head-on, and to accept and learn from my mistakes.';
@@ -51,17 +51,15 @@ class Timeline2 extends React.Component {
 	 														 my hometown Dallas that develops and maintains online giving software for \
 															 nonprofits and churches. As one of my more earlier experiences working with \
 															 web development tools, there was a lot I had to learn on the job; however I \
-															 was working alongside a solid group of people and grew a lot, both techincally and professionally. \
-															 Having dogs around the workplace was also a plus!';
+															 was working alongside a solid group of people and grew a lot, both techincally and professionally.';
 
-	 const drink = 'drink'
-	 const drinkLink = drink.link('https://www.npr.org/2017/07/06/535660662/in-santiago-chile-searching-for-a-drink-that-makes-you-weak-at-the-knees')
+	 // const drinkLink = drink.link('https://www.npr.org/2017/07/06/535660662/in-santiago-chile-searching-for-a-drink-that-makes-you-weak-at-the-knees')
 	 const mistiDescription = `The MIT International Science and Technology Initiative (MISTI) sends students \
 	 													 to collaborate with research groups around the world. I had the chance \
 														 to spend the summer in Santiago, Chile with the Natural Language Processing Group \
 														 at the Universidad Cat\xF3lica, modeling document similarity of biomedical research papers. \
 														 In addition to research, I was also able to travel around the country with other MIT students, catch a few \
-														 f\xFAtbol games, eat chorrillana, and enjoy the occasional earthquake (both the drink and the natural phenomenon).`;
+														 f\xFAtbol games, chow down on chorrillana, and enjoy the occasional earthquake (both the drink and the natural phenomenon).`;
 
 		return (
 			<div style={styles.img}>
@@ -99,4 +97,4 @@ class Timeline2 extends React.Component {
 	}
 }
 
-export default Radium(Timeline2);
+export default Radium(Timeline);

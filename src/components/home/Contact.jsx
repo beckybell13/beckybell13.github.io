@@ -2,9 +2,8 @@ import React from 'react';
 import Radium from 'radium';
 import Grid from 'material-ui/Grid';
 import Button from 'material-ui/Button';
-import Header from './Header.jsx';
 
-class CallToAction extends React.Component {
+class Contact extends React.Component {
 
 	getStyles() {
 		return {
@@ -47,7 +46,6 @@ class CallToAction extends React.Component {
 					</Grid>
 					<Grid item xs={6} style={styles.buttonContainer}>
 						<Grid container direction='column' justify='flex-start' alignItems='center' spacing={8}>
-
 							<Grid item xs={12} style={{width: '100%'}}>
 								<Grid container justify='flex-start' alignItems='center' direction='row'>
 									<Grid item xs={2} style={{padding: '6px', textAlign: 'right'}}>
@@ -60,7 +58,6 @@ class CallToAction extends React.Component {
 									</Grid>
 								</Grid>
 							</Grid>
-
 							<Grid item xs={12} style={{width: '100%'}}>
 								<Grid container justify='flex-start' alignItems='center'>
 									<Grid item xs={2} style={{padding: '6px', textAlign: 'right'}}>
@@ -73,7 +70,6 @@ class CallToAction extends React.Component {
 									</Grid>
 								</Grid>
 							</Grid>
-
 							<Grid item xs={12} style={{width: '100%'}}>
 								<Grid container justify='flex-start' alignItems='center'>
 									<Grid item xs={2} style={{padding: '6px', textAlign: 'right'}}>
@@ -86,7 +82,6 @@ class CallToAction extends React.Component {
 									</Grid>
 								</Grid>
 							</Grid>
-
 							<Grid item xs={12} style={{width: '100%'}}>
 								<Grid container justify='flex-start' alignItems='center'>
 									<Grid item xs={2} style={{padding: '6px', textAlign: 'right'}}>
@@ -99,8 +94,6 @@ class CallToAction extends React.Component {
 									</Grid>
 								</Grid>
 							</Grid>
-
-
 						</Grid>
 					</Grid>
 				</Grid>
@@ -109,4 +102,4 @@ class CallToAction extends React.Component {
 	}
 }
 
-export default Radium(CallToAction);
+export default Radium(Contact);
