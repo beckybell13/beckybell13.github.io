@@ -82,7 +82,7 @@ class Details extends React.Component {
 								education and intuitive UI design.
 							<br></br><br></br>
 								I finished undergrad in Spring 2017 and am currently pursuing a
-								fifth-year Masters of Engineering in computer science with the
+								fifth-year Master of Engineering in computer science with the
 								Center for Civic Media at the MIT Media Lab.
 							</p>
 							<Button className='button'
